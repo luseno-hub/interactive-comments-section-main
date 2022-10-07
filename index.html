@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./SCSS/style.css" />
+
+    <title>Frontend Mentor | Interactive comments section</title>
+  </head>
+  <body>
+    <!-- Pull dynamic content from the data.json file -->
+    <main>
+      <div class="container">
+        <!-- Comment 1 starts -->
+        <article class="msg-card">
+          <article class="msg-quantity">
+            <span class="msg-quantity__wrap">
+              <img
+                class="msg-quantity__add"
+                src="./images/icon-plus.svg"
+                alt="add"
+              />
+              <span class="msg-quantity__num">12</span>
+              <img
+                class="msg-quantity__less"
+                src="./images/icon-minus.svg"
+                alt="less"
+              />
+            </span>
+          </article>
+          <div class="msg-content">
+            <div class="msg-content__profile">
+              <img
+                src="./images/avatars/image-amyrobson.webp"
+                alt="amyrobson"
+              />
+              <span class="name">amyrobson</span>
+              <span class="duration">1 month ago</span>
+            </div>
+            <p class="msg-content__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam illo
+              numquam sequi, quae deleniti in doloribus ea cum non animi,
+              inventore quod laudantium necessitatibus facilis eum natus optio
+              ipsum rem obcaecati. Architecto, omnis laborum nobis unde minima
+              doloremque consequuntur facilis eos ea soluta amet debitis, esse
+              aperiam ex incidunt eius.
+            </p>
+          </div>
+
+          <span class="msg-reply">
+            <img src="./images/icon-reply.svg" alt="icon-reply" />
+            Reply
+          </span>
+        </article>
+        <!-- Comment 1 ends -->
+
+        <!-- Comment 2 starts -->
+        <article class="msg-card">
+          <article class="msg-quantity">
+            <span class="msg-quantity__wrap">
+              <img
+                class="msg-quantity__add"
+                src="./images/icon-plus.svg"
+                alt="add"
+              />
+              <span class="msg-quantity__num">5</span>
+              <img
+                class="msg-quantity__less"
+                src="./images/icon-minus.svg"
+                alt="less"
+              />
+            </span>
+          </article>
+          <div class="msg-content">
+            <div class="msg-content__profile">
+              <img
+                src="./images/avatars/image-maxblagun.webp"
+                alt="amyrobson"
+              />
+              <span class="name">maxblagun</span>
+              <span class="duration">2 weeks ago</span>
+            </div>
+            <p class="msg-content__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam illo
+              numquam sequi, quae deleniti in doloribus ea cum non animi,
+              inventore quod laudantium necessitatibus facilis eum natus optio
+              ipsum rem obcaecati. Architecto, omnis laborum nobis unde minima
+              doloremque consequuntur facilis eos ea soluta amet debitis, esse
+              aperiam ex incidunt eius.
+            </p>
+          </div>
+
+          <span class="msg-reply">
+            <img src="./images/icon-reply.svg" alt="icon-reply" />
+            Reply
+          </span>
+        </article>
+        <!-- Comment 2 ends -->
+
+        <div class="replies-wrapper">
+          <div class="replies-wrapper__line"></div>
+          <!-- Reply 1 starts -->
+          <article class="msg-card">
+            <article class="msg-quantity">
+              <span class="msg-quantity__wrap">
+                <img
+                  class="msg-quantity__add"
+                  src="./images/icon-plus.svg"
+                  alt="add"
+                />
+                <span class="msg-quantity__num">5</span>
+                <img
+                  class="msg-quantity__less"
+                  src="./images/icon-minus.svg"
+                  alt="less"
+                />
+              </span>
+            </article>
+            <div class="msg-content">
+              <div class="msg-content__profile">
+                <img
+                  src="./images/avatars/image-maxblagun.webp"
+                  alt="amyrobson"
+                />
+                <span class="name">ramsesmiron</span>
+                <span class="duration">1 weeks ago</span>
+              </div>
+              <p class="msg-content__text">
+                <span class="user-ref">@maxblagun</span> sit amet consectetur
+                adipisicing elit. Quam illo numquam sequi, quae deleniti in
+                doloribus ea cum non animi, inventore quod laudantium
+                necessitatibus facilis eum natus optio ipsum rem obcaecati.
+                Architecto, omnis laborum nobis unde minima doloremque
+                consequuntur facilis eos ea soluta amet debitis, esse aperiam ex
+                incidunt eius.
+              </p>
+            </div>
+
+            <span class="msg-reply">
+              <img src="./images/icon-reply.svg" alt="icon-reply" />
+              Reply
+            </span>
+          </article>
+          <!-- Reply 1 ends -->
+          <!-- Reply 2 starts -->
+          <article class="msg-card">
+            <article class="msg-quantity">
+              <span class="msg-quantity__wrap">
+                <img
+                  class="msg-quantity__add"
+                  src="./images/icon-plus.svg"
+                  alt="add"
+                />
+                <span class="msg-quantity__num">5</span>
+                <img
+                  class="msg-quantity__less"
+                  src="./images/icon-minus.svg"
+                  alt="less"
+                />
+              </span>
+            </article>
+            <div class="msg-content">
+              <div class="msg-content__profile">
+                <img
+                  src="./images/avatars/image-maxblagun.webp"
+                  alt="amyrobson"
+                />
+                <span class="name">maxblagun</span>
+                <span class="duration">2 weeks ago</span>
+              </div>
+              <p class="msg-content__text">
+                <span class="user-ref">@ramsesmiron</span> consectetur
+                adipisicing elit. Quam illo numquam sequi, quae deleniti in
+                doloribus ea cum non animi, inventore quod laudantium
+                necessitatibus facilis eum natus optio ipsum rem obcaecati.
+                Architecto, omnis laborum nobis unde minima doloremque
+                consequuntur facilis eos ea soluta amet debitis, esse aperiam ex
+                incidunt eius.
+              </p>
+            </div>
+
+            <span class="msg-reply">
+              <img src="./images/icon-reply.svg" alt="icon-reply" />
+              Reply
+            </span>
+          </article>
+          <!-- Reply 2 ends -->
+        </div>
+
+        <div class="input">
+          <img src="./images/avatars/image-juliusomo.webp" alt="" />
+          <textarea
+            class="input__textarea"
+            type="text"
+            name=""
+            id=""
+            placeholder="Add a comment..."
+          ></textarea>
+          <button class="input__btn-main" type="submit">SEND</button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Luseno</a>.
+    </footer>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
