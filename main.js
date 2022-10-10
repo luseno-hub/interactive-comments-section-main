@@ -5,11 +5,9 @@ console.log(data);
 
 const otherUsers = data.comments;
 console.log(otherUsers);
-const commentCard = document.querySelectorAll(".msg-card");
 
 const pageContainer = document.querySelector(".container");
 const comments = [];
-const commentReplies = [];
 
 const single = otherUsers.map((user) => {
   const testReply = user.replies;
